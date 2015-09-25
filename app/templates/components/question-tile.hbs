@@ -1,6 +1,8 @@
 <div class="col-md 6 question-display">
   <div class="question-display-content">
-         {{question.question}}
+    {{#link-to 'question' question.id}}     
+      {{question.question}}
       <li>{{question.author}}</li>
+    {{/link-to}}    
   </div> 
 </div>
