@@ -1,4 +1,4 @@
-<button class="btn btn-danger" {{action 'deleteQuestion' model}}>Delete Question</button>
+<button class="btn btn-danger" {{action 'deleteQuestion' model}}>Delete</button>
 
 {{#if updateShowing}}
 
@@ -18,7 +18,7 @@
     <label for="notes">Additional Notes</label>
     {{textarea value=notes id="notes" rows="5" class="form-control"}}
   </div>
-
+  
   <button class="btn btn-primary" {{action 'update' model}}>Save</button>
 </form>
 
