@@ -11,3 +11,11 @@
 </div>    
 
 {{edit-question model=model destroyQuestion="destroyQuestion" update="update"}}
+
+<h3>Answers</h3>
+<ul>
+{{#each model.answers as |answer|}}
+  {{answers-tile answer=answer}}
+{{/each}}  
+</ul>
+{{answer-form model=model saveAnswer="saveAnswer"}}
