@@ -48,19 +48,26 @@ body {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: black;
   transition: color .5s linear;
 }
 
 a:hover {
-  color: #996633;
+  color: #00CED1;
   text-decoration: none;
   transition: color .5s linear;
 }
 
 .question-header {
+  padding-top: 1em;
   font-size: 1.5em;
   font-weight: 400;
+  text-align: center;
+}
+
+.question-author {
+  font-size: 1.1em;
+  font-weight: 300;
   text-align: center;
 }
 
@@ -69,11 +76,6 @@ a:hover {
   margin-left: 6%;
 }
 
-.question-author {
-  font-size: 1.0em;
-  font-weight: 300;
-  text-align: center;
-}
 
 hr {
   width: 50%;
