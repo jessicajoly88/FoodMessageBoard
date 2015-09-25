@@ -1,1 +1,19 @@
 <li>{{answer.author}}: {{answer.body}}</li>
+
+{{#if updateAnswerShowing}}
+<form>
+<div class="form-group">
+    <label for="author">Author</label>
+    {{input value=author id="author" class="form-control" placeholder=answer.author}}
+  </div>
+  <div class="form-group">
+    <label for="body">Answer</label>
+    {{textarea value=body id="body" rows="5" class="form-control" placeholder=answer.body}}
+  </div>
+
+  <button class="btn btn-primary"{{action 'updateAnswer' answer}}>Update Answer</button>
+</form>
+
+{{else}}
+<button class="btn btn-warning"{{action 'updateAnswerShow'}}>Update Answer</button>
+{{/if}}
