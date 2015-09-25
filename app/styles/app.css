@@ -36,9 +36,11 @@ body {
   margin-left: 0rem;
   margin-top: 10rem;
   background: #DCDCDC;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  border-radius: 10px;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  padding-top: 2rem;
+  padding-bottom:2rem;
+  border-radius: 7px;
   font-size: 1.5em;
   max-width: 100rem;
 }
