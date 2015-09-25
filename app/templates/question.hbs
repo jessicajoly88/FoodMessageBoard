@@ -15,7 +15,7 @@
 <h3>Answers</h3>
 <ul>
 {{#each model.answers as |answer|}}
-  {{answers-tile answer=answer}}
+  {{answers-tile answer=answer updateAnswer="updateAnswer" destroyAnswer="destroyAnswer"}}
 {{/each}}  
 </ul>
 {{answer-form model=model saveAnswer="saveAnswer"}}

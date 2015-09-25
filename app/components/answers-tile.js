@@ -13,6 +13,11 @@ export default Ember.Component.extend({
   	}, 
   	updateAnswerShow() {
   	  this.set('updateAnswerShowing', true);
+  	}, 
+  	deleteAnswer(answer) {
+  	  if(confirm('Are you sure you want to delete this answer?')) {
+  	  	this.sendAction('destroyAnswer', answer);
+  	  }
   	}
-  }
+  }	
 });
