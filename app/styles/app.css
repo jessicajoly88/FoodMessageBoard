@@ -18,12 +18,28 @@ body {
 }
 
 .main-body {
-  margin-top: 6%;
+  margin-top: 4%;
 }
 
 .question-wrapper {
   margin-left: 10rem;
 }
 
+.question-display {
+  height:45rem;
+  margin-bottom: 5%;
+}
 
+.question-display-content {
+  position:center ;
+  text-align: center;
+  margin-left: 0rem;
+  margin-top: 10rem;
+  background: #DCDCDC;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  border-radius: 10px;
+  font-size: 1.5em;
+  max-width: 100rem;
+}
 
