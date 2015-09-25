@@ -13,5 +13,9 @@ body {
   background: #fff;
 }
 
+.navbar-header {
+  font-size: 25px;
+}
+
 .main-body {
   margin-top: 6%;
