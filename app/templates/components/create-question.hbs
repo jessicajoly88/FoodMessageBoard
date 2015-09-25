@@ -1,3 +1,5 @@
+{{#if formShowing}}
+
 <h1>Ask a new question</h1>
 <form>
   <div class="form-group">
@@ -17,4 +19,8 @@
 
   <button class="btn btn-primary" {{action 'save'}}>Save</button>
 </form>
+
+{{else}}
+  <button class="btn btn-primary"{{action 'formShow'}}> Add a Question</button>
+{{/if}}  
 

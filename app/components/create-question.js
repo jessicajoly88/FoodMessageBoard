@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  formShowing:false,
   actions: {
   	save() {
   	  var params = {
@@ -9,6 +10,11 @@ export default Ember.Component.extend({
         notes: this.get('notes')
   	  };
   	  this.sendAction('save', params);
+  	  this.set('formShowing',false);
+  	},
+  	
+  	formShow() {
+  	  this.set('formShowing', true);	
   	}
   }
 });
