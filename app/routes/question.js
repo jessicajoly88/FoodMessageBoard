@@ -15,8 +15,13 @@ export default Ember.Route.extend({
   	  this.transitionTo('question');
   	},
   	destroyQuestion(model) {
-  	  model.destroyRecord();
-  	  this.transitionTo('index');	
+      model.get('answers').then(function(answers) {
+        answers.forEach(function(answer) {
+          coment.destroyRecord();
+        });
+      });
+  	    model.destroyRecord();
+  	    this.transitionTo('index');	
   	}, 
   	saveAnswer(params) {
   	  var newAnswer = this.store.createRecord('answer', params);
