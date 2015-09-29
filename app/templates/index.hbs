@@ -1,7 +1,9 @@
 <div class="row question-wrapper">
   {{#each model as |question|}}
     {{question-tile question=question}}
-   {{/each}} 
+   {{/each}}
+   <br>
+   <center>
+   {{create-question save='save'}}
+   </center>
 </div>
-
-{{create-question save='save'}}

@@ -1,6 +1,6 @@
 <li>{{answer.author}}: {{answer.body}}</li>
-
-<button class="btn btn-warnng"{{action 'deleteAnswer' answer}}> Delete Answer</button>
+<br>
+<button class="btn btn-danger btn-sm"{{action 'deleteAnswer' answer}}> Delete Answer</button>
 
 {{#if updateAnswerShowing}}
 <form>
@@ -17,5 +17,6 @@
 </form>
 
 {{else}}
-<button class="btn btn-warning"{{action 'updateAnswerShow'}}>Update Answer</button>
+
+<button class="btn btn-success btn-sm"{{action 'updateAnswerShow'}}>Update Answer</button>
 {{/if}}
