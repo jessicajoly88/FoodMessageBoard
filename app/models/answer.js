@@ -3,6 +3,6 @@ import DS from 'ember-data';
 export default DS.Model.extend({
   author: DS.attr(),
   body: DS.attr(),
+  date_added: DS.attr(),
   question: DS.belongsTo('question', {async: true}),
-  date_added: DS.attr()
 });

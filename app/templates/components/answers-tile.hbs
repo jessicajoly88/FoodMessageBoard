@@ -1,4 +1,5 @@
 <li>{{answer.author}}: {{answer.body}}</li>
+{{format-date answer.date_added}}
 <br>
 <button class="btn btn-danger btn-sm"{{action 'deleteAnswer' answer}}> Delete Answer</button>
 
