@@ -17,7 +17,7 @@ export default Ember.Route.extend({
   	destroyQuestion(model) {
       model.get('answers').then(function(answers) {
         answers.forEach(function(answer) {
-          coment.destroyRecord();
+          answer.destroyRecord();
         });
       });
   	    model.destroyRecord();
@@ -41,7 +41,7 @@ export default Ember.Route.extend({
   	},
   	destroyAnswer(answer) {
   	  answer.destroyRecord();
-  	  this.transitionTo('queston')
+  	  this.transitionTo('queston');
   	}
   }
 });  
